@@ -5,7 +5,7 @@ def extract_account_data(transcript):
 
     account_id = hashlib.md5(transcript.encode()).hexdigest()[:8]
 
-    # create base account structure
+ 
     account = {
         "account_id": "acc_" + account_id,
         "company_name": "",
@@ -30,25 +30,21 @@ def extract_account_data(transcript):
 
     text = transcript.lower()
 
-    # detect company name
     if "abc fire protection" in text:
         account["company_name"] = "ABC Fire Protection"
 
-    # detect services
     if "sprinkler" in text:
         account["services_supported"].append("sprinkler systems")
 
     if "fire alarm" in text:
         account["services_supported"].append("fire alarms")
 
-    # detect emergencies
     if "sprinkler leak" in text:
         account["emergency_definition"].append("sprinkler leak")
 
     if "fire alarm triggered" in text:
         account["emergency_definition"].append("fire alarm triggered")
 
-    # detect business hours
     if "9 am to 5 pm" in text:
         account["business_hours"] = {
             "days": "Mon-Fri",
@@ -56,7 +52,6 @@ def extract_account_data(transcript):
             "end": "17:00"
         }
 
-    # if company missing
     if account["company_name"] == "":
         account["questions_or_unknowns"].append("company_name")
 
