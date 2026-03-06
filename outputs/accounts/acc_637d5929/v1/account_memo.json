@@ -1,0 +1,26 @@
+{
+    "account_id": "acc_637d5929",
+    "company_name": "ABC Fire Protection",
+    "business_hours": {
+        "days": "Mon-Fri",
+        "start": "09:00",
+        "end": "17:00"
+    },
+    "office_address": "",
+    "services_supported": [
+        "sprinkler systems",
+        "fire alarms"
+    ],
+    "emergency_definition": [
+        "sprinkler leak",
+        "fire alarm triggered"
+    ],
+    "emergency_routing_rules": [],
+    "non_emergency_routing_rules": [],
+    "call_transfer_rules": {},
+    "integration_constraints": [],
+    "after_hours_flow_summary": "",
+    "office_hours_flow_summary": "",
+    "questions_or_unknowns": [],
+    "notes": ""
+}

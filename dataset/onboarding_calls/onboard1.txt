@@ -1,0 +1,7 @@
+During onboarding the client confirmed that the business operates 24 hours.
+
+Emergency sprinkler calls must immediately transfer to the technician.
+
+Non emergency service requests should be logged and handled the next business day.
+
+The company also confirmed that sprinkler jobs must never be created automatically in ServiceTrade.
