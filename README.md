@@ -74,3 +74,47 @@ Extraction is rule-based and does not use an LLM.
 - LLM-based extraction
 - Retell API integration
 - Web dashboard
+
+
+## Repository Structure
+
+```
+automation-pipeline-assignment
+│
+├── dataset
+│   ├── demo_calls
+│   │   └── demo1.txt
+│   └── onboarding_calls
+│       └── onboard1.txt
+│
+├── scripts
+│   ├── extract_demo_data.py
+│   ├── generate_agent_spec.py
+│   ├── onboarding_update.py
+│   ├── changelog.py
+│   └── utils.py
+│
+├── outputs
+│   └── accounts
+│       └── acc_<account_id>
+│           ├── v1
+│           │   ├── account_memo.json
+│           │   └── agent_spec.json
+│           │
+│           └── v2
+│               ├── account_memo.json
+│               ├── agent_spec.json
+│               └── changes.md
+│
+├── workflows
+│   └── pipeline_workflow.md
+│
+├── logs
+│   └── pipeline.log
+│
+├── run_pipeline.py
+├── requirements.txt
+└── README.md
+```
+
+This structure shows how transcripts are processed into versioned agent configurations.
